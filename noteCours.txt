@@ -1,0 +1,30 @@
+Component daans viwes js componenent
+si dans app.js : 
+Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+donc on fais lappel avec <example-component>
+
+
+installer vue router 
+npm install vue-router
+puis dans app.js : 
+
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
+
+
+getting started :
+<div id="app">
+  <h1>Hello App!</h1>
+  <p>
+    <!-- use router-link component for navigation. -->
+    <!-- specify the link by passing the `to` prop. -->
+    <!-- `<router-link>` will be rendered as an `<a>` tag by default -->
+    <router-link to="/foo">Go to Foo</router-link>
+    <router-link to="/bar">Go to Bar</router-link>
+  </p>
+  <!-- route outlet -->
+  <!-- component matched by the route will render here -->
+  <router-view></router-view>
+</div>
